@@ -1,5 +1,7 @@
 import { create } from 'zustand'
 
+
+
 // 建立 store hook
 const usePsyStore = create((set) => ({
 	// states and actions
@@ -12,6 +14,7 @@ const usePsyStore = create((set) => ({
   updateTotalQuestions: (newState) => set( (state)=>({ totalQuestions: newState}) ),
   updateScore: (newState) => set( (state)=>({ score: newState}) )
 }))
+
 
 
 export { usePsyStore }
