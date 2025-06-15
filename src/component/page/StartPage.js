@@ -16,8 +16,8 @@ export default function StartPage({nextStep}) {
           <div className='text-blue-900 font-[500] text-center text-[14px]
            leading-loose tracking-wide '>
             其實人類的下輩子並沒有我們想像中那麼多選擇，<br/>
-            我們只能是蛇、蟾蜍或是蕨類。<br/>
-            人的轉生取決於一個人此生對某些關鍵問題的判斷
+            我們只能是爬蟲、軟體動物或是蕨類。<br/>
+            人的轉生取決於一個人此生對某些問題的信念
             來看看你來生將會是什麼生物吧！
           </div>
           <button 
