@@ -3,7 +3,6 @@
 import MobileFrame from '@/component/layout/MobileFrame';
 import Image from 'next/image';
 import titleImg from '@/../public/0.start/title.svg';
-import startBtn from '@/../public/0.start/startBtn.png';
 import circle1Img from '@/../public/0.start/blur-circle-1.png';
 
 export default function StartPage({nextStep}) {
@@ -12,18 +11,21 @@ export default function StartPage({nextStep}) {
     <>
       <MobileFrame>
         <div className='flex justify-center items-center flex-col gap-[60px]'>
-          <Image className=' absolute top-0 -translate-y-1/2 ' src={circle1Img} alt='circle1Img' />
-          <Image src={titleImg} alt='title' />
-          <div className='text-[#B95F0F] font-[500] text-center text-[14px]
+          {/* <Image className=' absolute top-0 -translate-y-1/2 ' src={circle1Img} alt='circle1Img' /> */}
+         <div className='flex justify-center text-rose-900 '> 輪迴轉世</div>
+          <div className='text-blue-900 font-[500] text-center text-[14px]
            leading-loose tracking-wide '>
-            有些人天生酥脆，有些人出爐時就塌了。<br/>
-            你努力發酵、翻滾、等待出爐，<br/>ˇ
-            結果還是變成一坨可頌災難。
-            沒關係，這世界不缺完美麵包，
-            缺的是——像你一樣軟爛卻獨特的存在。
-            現在，就來看看你是什麼等級的失控可頌吧。
+            其實人類的下輩子並沒有我們想像中那麼多選擇，<br/>
+            我們只能是蛇、蟾蜍或是蕨類。<br/>
+            人的轉生取決於一個人此生對某些關鍵問題的判斷
+            來看看你來生將會是什麼生物吧！
           </div>
-          <Image onClick={nextStep} className='w-[160px]' src={startBtn} alt='startBtn' />
+          <button 
+            onClick={nextStep} 
+            className='px-8 py-3 bg-[#90EE90] text-[#006400] rounded-full font-bold text-xl hover:bg-[#98FB98] transition-colors'
+          >
+            START
+          </button>
           <Image className=' absolute bottom-0 translate-y-1/2 pointer-events-none ' src={circle1Img} alt='circle1Img' />
         </div>
       </MobileFrame>

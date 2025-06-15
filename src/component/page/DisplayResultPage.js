@@ -8,8 +8,8 @@ export default function DisplayResultPage({nextStep}) {
     <>
       <MobileFrame>
         <div>
-          <div>
-            顯示我的失控可頌
+          <div className='flex justify-center text-rose-800 text-2xl mb-20'>
+            你的來生是......
           </div>
             <div 
               className={` bg-[#89BCFF] w-full rounded-full text-white 

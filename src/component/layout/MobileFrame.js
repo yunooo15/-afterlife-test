@@ -4,8 +4,9 @@ export default function MobileFrame({children}) {
 
   return (
     <>
-      <div className="w-[33%] min-w-[380px] max-w-[420px] h-[85%] p-[52px] bg-white 
-        rounded-2xl flex justify-center items-center
+      <div className="fixed inset-0 w-full h-full bg-[url('/background.jpg')] bg-cover bg-center  blur-xs 0" />
+      <div className="w-[33%] min-w-[380px] max-w-[420px] h-[85%] p-[52px] bg-white opacity-80
+        flex justify-center items-center text-6xl font-bold
          relative overflow-hidden
       ">
         {children}
